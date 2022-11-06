@@ -16,8 +16,13 @@
 }
 
 
-html {
+/*html {
     scroll-padding: 80px;
     scroll-behavior: smooth;
-}
+}*/
 
+.container-banner {
+    align-items: center;
+    justify-content: center;
+
+}

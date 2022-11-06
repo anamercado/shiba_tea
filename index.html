@@ -24,13 +24,11 @@
 
     
 <body>
+  
+        <!--NAV BAR  -->
 
-    <body> 
-        <!--NAV BAR -->
-
-          <nav class="navbar navbar-expand-xl navbar-nav-scroll fixed-top pb-4">
-      
-              <div class="container bg-secondary ">
+          <nav class="container-fluid navbar navbar-expand-xl navbar-nav-scroll fixed-top py-0">
+              <div class="container-fluid bg-secondary">
               
                 <a class="navbar-brand" href="#"> <strong> SHIBA TEA </strong></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +39,7 @@
                   <div class="navbar-nav text-light">
                     <ul class="nav nav-pills">
                       <li class="nav-item">
-                        <a class="nav-link text-body" href="#scrollspyHeading1">HOME</a>
+                        <a class="nav-link text-body" href="index.html">HOME</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link text-body" href="#scrollspyHeading2">FILOSOFÍA</a>
@@ -53,7 +51,10 @@
                         <a class="nav-link text-body" href="#scrollspyHeading4">GALERÍA</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link text-body" href="#scrollspyHeading5">CONTACTO</a>
+                        <a class="nav-link text-body" href="#scrollspyHeading5">TESTIMONIOS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-body" href="">CONTACTO</a>
                       </li>
     
                     </ul> 
@@ -64,37 +65,36 @@
           
           </nav>
 
-    
-          
        
-        <!--FIN NAV BAR -->
     
         <!--BANNER-->
-    <div class="bg-light pt-5" id="scrollspyHeading1">
-        <div class="container">
-            <div class="row justify-content-center  py-5">
-                <header class="col col-md-11 col-xxl-8 text-center mb-4">
-                    <h1 class="display-1  fw-bold">SHIBA TEA</h1>
-                    <h2 class=" fw-semibold my-4 text-secondary" >El camino del té </h2>
-                        <a href="" class="btn btn-danger btn-lg text-light"> Ver Productos</a>
-                       
-                </header>
-            </div>            
+  
+          
+          <div class="justify-content-center px-0 mx-0" id="scrollspyHeading1">
+              <img src="../img/banner.jpg" class="card-img" >
+              <div class="card-img-overlay text-center mb-4">
+                <h1 class="card-title text-center display-1 fw-bold mt-5">Shiba Tea</h1>
+                <h4 class="card-text w-semibold my-4 text-secondary text-center">El camino del té</h4>
+                  <a href="" class="btn btn-danger text-center btn-lg text-light"> Ver Productos</a>
+              </div>
+          </div>
 
    <!--FIN BANNER -->
 
 
      <!-- FILOSOFÍA-->
 
-     <div class="container">
-        <div class="row py-5 mt-3 ">
+     <div class="container-fluid ml-0 pl-0 pt-4" id="scrollspyHeading2">
+      
+        <div class="row">
        
-            <div class="col-12 col-lg-6">
-            <div class="ratio ratio-16x9">
+            <div class="col-12 col-lg-6 px-0">
+            <div class="align-items-center">
             <img src="img/filosofia.jpg" class="d-block w-100" alt="...">
             </div>
           </div>
-            <div class="col-12 col-lg-6">
+            <div class="col col-lg-6">
+            <h2 class="text-center justify-content-center py-3">Filosofía</h2>
             <h5><strong> Ceremonía del té en Japón:</strong></h5>
             <p>Dentro de la ceremonia del té se encuentran cuatro principios fundamentales de tradición zen. Son los siguientes:</p>
             <p>
@@ -105,8 +105,17 @@
                 <li> <strong> Tranquilidad </strong> derivada de la paz mental y la percepción de abundancia en la naturaleza (jaku). </li>   
               </ul>  
             </p>
-            <p>   </p>
-          </div>   
+            <p>La ceremonia japonesa del té (cha-no-yu, chadō o sadō?) es una forma ritual de preparar té verde o matcha (抹茶?), influenciada por el budismo zen, sirviéndose a un pequeño grupo de invitados en un entorno tranquilo. 
+              Es una manifestación significativa de la historia y la cultura japonesa tradicional. Aprender la práctica de la ceremonia del té es estudiar la cultura japonesa. </p>
+
+             <p> <strong>Su objetivo es la creación de una atmósfera especial, en la que los participantes saborean el té y admiran pinturas sobre la naturaleza y otras obras de arte. </strong> 
+              Además, es una invitación a olvidar todos los objetos materiales y mundanos para purificar el alma y así alcanzar un estado de armonía espiritual con el universo.
+               Es un ritual de reflexión y autoconocimiento para cada persona que bebe la infusión. </p> 
+               <div class="container justify-content-center text-center">
+                <a type="button" class="btn btn-outline-secondary " href="/filosofia.html">Saber más </a> 
+              </div> 
+          </div>  
+
 
         </div>
     </div>
@@ -114,11 +123,12 @@
 
      <!-- EXPERIENCIAS-->
 
-         <div class="container">
-            <ul class="row list-unstyled py-3 mt-4  justify-content-center text-center">
+         <div class="container-fluid" id="scrollspyHeading3">
+          <h2 class="text-center justify-content-center pt-4">Experiencias</h2>
+            <ul class="row list-unstyled py-2 mt-4  justify-content-center text-center">
                           
-                <li class="col-6 col-lg-4 d-flex -mb-4">
-                  <div class="shadow p-3 rounded-3">
+                <li class="col-6 col-lg-4 d-flex mb-4">
+                  <div class="shadow rounded-3">
                     <img src="img/experiencia1.jpg" class="d-block w-100 py-2" alt="...">
                     <h2 class="h5 fw-semibold">Experiencia 1</h2>
                     <p> Experiencia para 1 persona. <br>
@@ -127,8 +137,8 @@
                 </li>
   
   
-                <li class="col-6 col-lg-4 d-flex -mb-4">
-                    <div class="shadow p-3 rounded-3">
+                <li class="col-6 col-lg-4 d-flex mb-4">
+                    <div class="shadow rounded-3">
                       <img src="img/experiencia2.jpg" class="d-block w-100 py-2" alt="...">
                       <h2 class="h5 fw-semibold">Experiencia 2</h2>
                       <p> Experiencia para 2 personas <br>
@@ -137,8 +147,8 @@
                   </li>
              
                 
-                <li class="col-6 col-lg-4 d-flex -mb-4">
-                    <div class="shadow p-3 rounded-3">
+                <li class="col-6 col-lg-4 d-flex mb-4">
+                    <div class="shadow rounded-3"> 
                       <img src="img/experiencia3.jpg" class="d-block w-100 py-2" alt="...">
                       <h2 class="h5 fw-semibold">Experiencia 3</h2>
                       <p> Experiencia para + de 2 personas. <br>
@@ -151,7 +161,7 @@
   
             </ul>   
             <div class="container justify-content-center text-center">
-              <button type="button" class="btn btn-outline-secondary ">Ver Experiencias</button> 
+              <a type="button" class="btn btn-outline-secondary " href="/experiencias.html">Ver más </a> 
             </div>
           
          
@@ -260,88 +270,57 @@
      
 
        <!-- TESTIMONIOS-->
-
-       <div class="container bg-primary py-4">
+    <div class="container-fluid px-0 pt-5" id="scrollspyHeading5">
+      <h2 class="text-center justify-content-center py-4">Testimonios</h2>
        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"  class="active" aria-current="true"  aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"  class="active" aria-current="true"  aria-label="Slide 2"></button>
-         <!--   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"  class="active" aria-current="true"  aria-label="Slide 3"></button> -->
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"  class="active" aria-current="true" aria-label="Slide 4"></button>
-          <!--  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"  class="active" aria-current="true" aria-label="Slide 5"></button> -->
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-
-        <div class="carousel-inner ">
+        <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="img/testimonio1.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h3> <strong>Estefanía Suarez</strong> </h3>
-              <p class=" h4 fw-semibold"> "Me sorprendió la variedad de té que podes probar"</p>
+              <h5>Estefanía Suarez</h5>
+              <p>Me sorprendió la variedad de té que podes probar.</p>
             </div>
           </div>
-
           <div class="carousel-item">
-            <div class="carousel-item active">
-              <img src="img/testimonio2.jpg" class="d-block w-100" alt="...">
+            <img src="img/testimonio2.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h3> <strong>Laura Iberá</strong> </h3>
-              <p class=" h4 fw-semibold"> "Excelente lugar para pasar un rato con amigas . Una experiencia diferente." </p>
+              <h5>Laura Iberá</h5>
+              <p>Excelente lugar para pasar un rato con amigas . Una experiencia diferente.</p>
             </div>
           </div>
-          </div>
-
-            <!--  <div class="carousel-item">
-            <div class="carousel-item active">
+          <div class="carousel-item">
             <img src="img/testimonio3.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h3> <strong>Agustín Soler</strong> </h3>
-              <p class=" h4 fw-semibold">"Me encanto el lugar. Súper recomendado para relajar un rato."</p>
+              <h5>Agustín Soler</h5>
+              <p>Me encanto el lugar. Súper recomendado para relajar un rato.</p>
             </div>
           </div>
-          </div> -->
-
-       <div class="carousel-item">
-            <div class="carousel-item active">
-            <img src="img/testimonio4.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h3> <strong>Ignacio Balbuena</strong> </h3>
-              <p class="h4 fw-semibold">"Fuimos con mi pareja y pasamos una tarde diferente. Un lugar sin duda que tienen que conocer."</p>
-            </div>
-          </div>
-          </div>
-
-           <!-- <div class="carousel-item">
-            <div class="carousel-item active">
-            <img src="img/testimonio5.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h3> <strong> Camila Lima</strong> </h3>
-              <p class="h4 fw-semibold"></p>"Para los fanáticos del té , no dejen de visitarlo."</p>
-            </div>
-          </div>
-          </div> -->
-
         </div>
-        <button class="carousel-control-prev btn-c" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next btn-c" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-
     </div>
-        <!-- FIN DE TESTIMONIOS-->
-
-
+    
+    <!-- FIN DE TESTIMONIOS-->
 
     <!-- FOOTER-->
     <footer class="container-fluid bg-dark py-2">
         <p class="text-star text-secondary pt-2">Cabral Santiago - Esquenazi Karina - Mercado Ana Laura - Torrado Sofía / Desarrollo 2 y Programación 1 - 2b  </p>
-      </footer>  
+    </footer>  
 
     <!-- FIN DE FOOTER-->
+
                
         <!--BOOTSTRAP DESDE UN CDN ( js) -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
