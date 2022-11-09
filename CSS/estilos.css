@@ -15,7 +15,48 @@
     font-family: 'poppins', sans-serif;
 }
 
+/* Por debajo de 700px */ @media screen and (max-width: 700px){
+    .titulo-ppal{
+    font-size:18px;
+    }
+    .slogan{
+    font-size:15px;
+    }
+    .boton-prod {
+        font-size: 12px;
+    }
+    }
+/* Por debajo de 400px */
+    @media screen and (max-width: 400px){
+        .titulo-ppal{
+            font-size:12px;
+            }
+        .slogan{
+            font-size:10px;
+            }
+        .boton-prod {
+            font-size: 10px;
+            }
+        .banner-text {
+            top: 50%;
+            left: 0%;
+            transform: translateY(-20%);
+        }
+    }
 
+
+.banner-text {
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+}
+
+.card-img {
+    background-attachment: fixed;
+    background-size: cover;
+    max-height: 40em;
+    object-fit: cover;
+}
 /*html {
     scroll-padding: 80px;
     scroll-behavior: smooth;
@@ -24,5 +65,4 @@
 .container-banner {
     align-items: center;
     justify-content: center;
-
 }
