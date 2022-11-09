@@ -15,33 +15,29 @@
     font-family: 'poppins', sans-serif;
 }
 
-/* Por debajo de 700px */ @media screen and (max-width: 700px){
+/* Por debajo de 700px */ 
+@media screen and (max-width: 700px){
     .titulo-ppal{
-    font-size:18px;
+    font-size:  4em;
     }
     .slogan{
-    font-size:15px;
+    font-size:  2em;
     }
     .boton-prod {
-        font-size: 12px;
+        font-size: 1em;
     }
     }
 /* Por debajo de 400px */
-    @media screen and (max-width: 400px){
-        .titulo-ppal{
-            font-size:12px;
-            }
-        .slogan{
-            font-size:10px;
-            }
-        .boton-prod {
-            font-size: 10px;
-            }
-        .banner-text {
-            top: 50%;
-            left: 0%;
-            transform: translateY(-20%);
-        }
+@media screen and (max-width: 400px){
+    .titulo-ppal{
+        font-size:1.5em;
+    }
+    .slogan{
+        font-size:1em;
+    }
+    .boton-prod {
+        font-size: 1em;
+    }
     }
 
 
@@ -49,12 +45,21 @@
     top: 50%;
     left: 0%;
     transform: translateY(-50%);
-}
-
+    }
+/*
+.titulo-ppal{
+    font-size: 6em;
+    }
+.slogan{
+    font-size:3em;
+    }
+.boton-prod {
+    font-size: 1.5em;
+    }*/
 .card-img {
     background-attachment: fixed;
     background-size: cover;
-    max-height: 40em;
+    max-height: 35em;
     object-fit: cover;
 }
 /*html {
