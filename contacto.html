@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shiba Tea </title>
+
+
+    <!--BOOTSTRAP DESDE UN CDN ( css) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+
+    <!--BOOTSTRAP ICONS ( cdn) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+
+
+    <!--BOOTSTRAP ENLAZADO CON CSS -->
+    <link rel="stylesheet" href="CSS/estilos.css">
+
+
+</head>
+
+
+<body>
+
+    <!--NAV BAR  -->
+
+    <nav class="container-fluid navbar navbar-expand-md fixed-top py-0">
+        <div class="container-fluid bg-secondary">
+
+            <a class="navbar-brand text-white " href="index.html"> <strong> SHIBA TEA </strong>
+                <img src="img/logoblanco.png" alt="..." height="25"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="productos.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="filosofia.html">Filosofía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="experiencias.html">Experiencias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contacto.html">Contacto</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+
+
+    <!--FORMULARIO Y MAPA-->
+    <div class="container py-5 mt-6 id=">
+
+        <h2 class="text-star py-3"> <strong>Contacto </strong></h2>
+
+        <div class="row justify-content-center">
+
+
+            <div class="col-12 col-sm-8 col-md-6 ">
+                <form class=" g-3 needs-validation" novalidate>
+                    <label for="validationCustom01" class="form-label">Nombre:</label>
+                    <input type="text" class="form-control" id="validationCustom01" required>
+                    <label for="exampleInputEmail1" class="form-label mt-3">Email:</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                    <label for="exampleFormControlTextarea1" class="form-label mt-3">Mensaje:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <div class="text-muted pb-3">
+                        Todos los campos son obligatorios.
+                    </div>
+                    <div class="invalid-feedback text-muted">
+                        Debe completar todos los campos.
+                    </div>
+                    <div>
+                        <button class="btn btn-dark" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            <!--Google map-->
+
+            <div class="col-12 col-sm-8 col-md-6 pt-4">
+                <div id="map-container-google-2" class="z-depth-1-half map-container ratio ratio-16x9">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.698452854331!2d-58.412463584770826!3d-34.58649588046389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca821278a48b%3A0xf8da40a15e2a230f!2sBulnes%202201%2C%20C1425DKM%20CABA!5e0!3m2!1ses!2sar!4v1668009073651!5m2!1ses!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <!--Google Maps-->
+
+        </div>
+
+    </div>
+
+
+    <!--FIN FORMULARIO Y MAPA -->
+
+    <!--BLOQUES DE INFORMACIÓN-->
+    <div class="bg-light pt-5" id="scrollspyHeading1">
+        <div class="container-fluid">
+
+
+            <ul class="row list-unstyled py-3 mt-4">
+
+                <li class="col-12 col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="shadow w-100 p-3 rounded-3 ">
+                        <i class=" h3 bi bi-envelope-fill"></i>
+                        <h2 class="h3 fw-semibold">Email</h2>
+                        <p> shibatea@gmail.com <br>
+                        shibatea@caminodelte.com.ar</p>
+                    </div>
+                </li>
+
+
+                <li class="col-12 col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="shadow w-100 p-3 rounded-3 ">
+                        <i class=" h3 bi bi-chat-left-text-fill"></i>
+                        <h2 class="h3 fw-semibold"> Live chat </h2>
+                        <p> Podemos conversar y explicarte las experiencias que brindamos. </p>
+                    </div>
+                </li>
+
+
+                <li class="col-12 col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="shadow w-100 p-3 rounded-3 ">
+                        <i class=" h3 bi bi-telephone-fill"></i>
+                        <h2 class="h3 fw-semibold"> Teléfono </h2>
+                        <p> Wpp: 1567801142 / 1542338040 <br>
+                            Fijo: (011) 4450-2321</p>
+                    </div>
+                </li>
+
+
+                <li class="col-12 col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="shadow w-100 p-3 rounded-3 ">
+                        <i class=" h3 bi bi-geo-alt-fill"></i>
+                        <h2 class="h3 fw-semibold">Nuestro local </h2>
+                        <p>Bulnes 2201- Palermo (CABA) <br>
+                            Lunes a Sábados de 10 a 20 hs
+                        </p>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+    
+    <!--FIN DE BLOQUES DE INFORMACIÓN  -->
+
+
+    <!-- FOOTER-->
+    <footer class="container-fluid bg-dark py-2">
+        <p class="text-star text-secondary pt-2">Cabral Santiago - Esquenazi Karina - Mercado Ana Laura - Torrado Sofía
+            / Desarrollo 2 y Programación 1 - 2b </p>
+    </footer>
+
+    <!-- FIN DE FOOTER-->
+
+
+    <!--BOOTSTRAP DESDE UN CDN ( js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+        </script>
+
+
+</body>
+
+</html>

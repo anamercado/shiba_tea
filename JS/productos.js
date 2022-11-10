@@ -96,7 +96,7 @@ productos [11] ['Caracteristica'] = ["."];
         <script>
             'use strict';
 */
-            for (let i=0; i < productos.length; i++) {
+            /*for (let i=0; i < productos.length; i++) {
                 document.write ('<article>');
                     document.write ('<figure>');
                         document.write ('<img src="img/' + productos[i]['Foto'] +'" alt="'+ productos[i]['Nombre'] +'" >');
@@ -110,8 +110,8 @@ productos [11] ['Caracteristica'] = ["."];
                     document.write ('<li>Conductores: ' + autos[i]['Conductor'] + '</li>');
                     document.write ('<li>Presentación: ' + autos[i]['Orden'] + '</li>');
                 document.write ('</ul>');
-                document.write ('</article>'); */
-            }
+                document.write ('</article>'); 
+            }*/
         /*
         </script>
     </main>
