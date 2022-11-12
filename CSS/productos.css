@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2? family= Big+Shoulders+Inline+Text:wght@100 & family= Poppins:ital,wght@0,100;0,200;0,300;0,400; 0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 & display=swap');
 
-*{
+* {
     font-family: 'poppins', sans-serif;
 }
+
 .container-banner {
     align-items: center;
     justify-content: center;
@@ -13,7 +14,7 @@
     left: 0%;
     transform: translateY(-50%);
     color: azure;
-    }
+}
 
 .card-img {
     background-attachment: fixed;
@@ -31,12 +32,12 @@ body {
     background-color: rgb(236, 236, 236);
 }
 
-header, main, section {
-    max-width: 1000px;
+header,
+main,
+section {
     background-color: #fff;
     margin: 0 auto 2rem;
     padding: 2rem;
-    border-radius: 0.5rem;
     box-shadow: 0 5px 20px rgb(184, 184, 184, 0.5);
 }
 
@@ -47,19 +48,116 @@ article {
     padding: 0.5rem;
 }
 
+.owl-nav {
+    font-size: 2em;
+}
+
+.owl-carousel {
+    position: relative;
+}
+
+.owl-prev,
+.owl-next {
+    position: absolute;
+    top: 50%;
+}
+
+.owl-prev {
+    left: -20px;
+    
+}
+
+.owl-next {
+    right: -20px;
+}
+
+
 @media (min-width: 600px) {
     main {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
+
     article {
         width: 48%;
     }
+    .owl-nav {
+        font-size: 2.5em;
+    }
+    
 }
+
 
 @media (min-width: 780px) {
     article {
         width: 31%;
     }
+
+    .owl-nav {
+        font-size: 4em;
+    }
+    
 }
+
+.container-buscador {
+    padding: 2em;
+    margin: 0 auto;
+   
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  input[type="search"] {
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding: 0.35em 0.75em;
+      border: none;
+      font-size: 1.1em;
+      text-decoration: none;
+      line-height: normal;
+      max-height: 3em;
+    
+      flex: 2 0 250px;
+  }
+  
+  input[type="search"]:focus {
+    background: Thistle;
+    color: black;
+    letter-spacing: .1em;
+    outline: none;
+  }
+  
+  button {
+    flex: 1 0 90px;
+    max-height: 3em;
+    font-size: 1.1em;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    border-radius: 5px 5px 5px 5px;
+    background: silver;
+    color: white;
+    border: none;
+    padding: 0.35em 0.75em;
+    cursor: pointer;
+  
+  }
+  button:hover {
+    background: rgb(17, 17, 18);
+  }
+  
+  @media (max-width: 450px) {
+    body {
+      width: 100%;
+    }
+    
+  }
+

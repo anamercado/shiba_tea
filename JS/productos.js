@@ -72,7 +72,7 @@ productos [9] ['Nombre'] = [" Aqua"];
 productos [9] ['Tipo'] = ["Essential"]; 
 productos [9] ['Foto'] = ["caja2.jpg"]; 
 productos [9] ['Precio'] = 1500; 
-productos [9] ['Caracteristica'] = [" Té negro con cardamomo, coriandro, enebro, canela en rama, jengibre, clavo de olor y anís verde."];
+productos [9] ['Caracteristica'] = ["Té negro con cardamomo, coriandro, enebro, canela en rama, jengibre, clavo de olor y anís verde."];
 
 productos [10] = []
 productos [10] ['Nombre'] = [" Fire"]; 
@@ -194,3 +194,26 @@ productos [11] ['Caracteristica'] = ["Té rojo, jengibre, naranja deshidratada, 
             </script>
       </main>
     </script> */
+
+    /* 
+    <script>
+           
+    for (let i=0; i < productos.length; i++) {
+        document.write ('<article>');
+            document.write ('<figure>');
+                document.write ('<img src="img/' + productos[i]['Foto'] +'" alt="'+ productos[i]['Nombre'] +'" >');
+            document.write ('</figure>');
+        document.write ('<h2>' + [i] + '' + productos[i]['Nombre'] + '</h2>');
+
+        document.write ('<p>' + productos[i]['Caracteristica'] + '</p>');
+
+        document.write ('<ul>');
+            document.write ('<li>Foto: ' + productos[i]['Foto'] + '</li>');
+            document.write ('<li>Nombre: ' + productos[i]['Nombre'] + '</li>');
+            document.write ('<li>Caracteristica: ' + productos[i]['Caracteristica'] + '</li>');
+            document.write ('<li>Precio: ' + productos[i]['Precio'] + '</li>');
+        document.write ('</ul>');
+        document.write ('</article>'); 
+    }
+
+</script>*/

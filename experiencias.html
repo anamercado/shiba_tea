@@ -15,6 +15,8 @@
   <!--BOOTSTRAP ICONS ( cdn) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
+  <!--BOOTSTRAP ENLAZADO CON CSS --> 
+  <link rel="stylesheet" href="CSS/estilos.css">
 </head>
 
 <body>
@@ -67,20 +69,23 @@
     <!--FIN NAV BAR -->
 
     <!--BANNER-->
-    <div class="bg-light pt-5" id="scrollspyHeading1">
-      <div class="container-fluid bg-secundary pt-2">
-        <header class="justify-content-center text-center py-4">
-          <h2><strong> SUMATE A NUESTRAS EXPERIENCIAS</strong></h2>
-          <h5 class="fw-semibold"> Un buen momento para compartir con tu familia y amigos</h5>
-        </header>
+    <section>
+      <div class="position-relative  px-0 mx-0" id="scrollspyHeading1">
+        <img src="../img/experiencias.jpg" class="card-img">
+        <!--Necesitamos blurearla o cambiar de img siento que se pierde el titulo-->
+        <div class="text-center mb-4 position-absolute w-100 banner-text">
+          <h1 class="card-title text-center display-1 fw-bold mt-5 titulo-ppal">SUMATE A NUESTRAS EXPERIENCIAS</h1>
+          <h4 class="card-text w-semibold my-4 text-white text-center slogan">Un buen momento para compartir con tu familia y amigos</h4>
+          <!--Link a Tienda-->
+        </div>
       </div>
-
+    </section>
       <!--FIN BANNER -->
 
 
       <!--SECCION 1 -->
-      <div class="container-fluid py-3 bg-secondary">
-        <div class="row py-3 mt-3 text-light pt-3">
+      <div class="container-fluid container-secciones1 py-3 ">
+        <div class="row py-3 mt-3 text-dark pt-3  align-items-center">
 
           <div class="col-12 col-lg-6">
             <div class="ratio ratio-16x9">
@@ -109,7 +114,7 @@
             <p> <strong> -Experiencia para 1 persona. <br>
                 Tiempo de Duración: 1 hs </strong>
             </p>
-
+            <a type="button" class="btn btn-light mb-4 " href="/contacto.html">Reservar</a>
           </div>
 
         </div>
@@ -119,8 +124,8 @@
 
       <!-- SECCIÓN 2-->
 
-      <div class="container-fluid py-3 bg-secondary">
-        <div class="row py-5 mt-3 text-light">
+      <div class="container-fluid py-3 container-secciones2">
+        <div class="row py-5 mt-3 text-dark  align-items-center">
 
 
           <div class="col-12 col-lg-6">
@@ -146,7 +151,7 @@
             <p> <strong> -Experiencia para 2 personas. <br>
                 Tiempo de Duración: 2 hs </strong>
             </p>
-
+            <a type="button" class="btn btn-light mb-4 " href="/contacto.html">Reservar</a>
           </div>
 
           <div class="col-12 col-lg-6">
@@ -164,12 +169,12 @@
 
 
       <!--SECCION 3 -->
-      <div class="container-fluid py-3 bg-secondary">
-        <div class="row py-3 mt-3  text-light ">
+      <div class="container-fluid py-3 container-secciones3">
+        <div class="row py-3 mt-3  text-dark  align-items-center">
 
           <div class="col-12 col-lg-6">
             <div class="ratio ratio-16x9">
-              <img src="img/seccion3.jpg" class="d-block w-100" alt="...">
+              <img src="img/seccion3.jpg" class="d-block w-100 h-100" alt="...">
             </div>
           </div>
 
@@ -196,7 +201,7 @@
             <p> <strong> -Experiencia para + de 2 personas. <br>
                 Tiempo de Duración: 1.40 hs </strong>
             </p>
-
+            <a type="button" class="btn btn-light mb-4 " href="/contacto.html">Reservar</a>
           </div>
 
         </div>
@@ -208,8 +213,28 @@
 
       <!-- FOOTER-->
       <footer class="container-fluid bg-dark py-2">
-        <p class="text-star text-secondary pt-2">Cabral Santiago - Esquenazi Karina - Mercado Ana Laura - Torrado Sofía
-          / Desarrollo 2 y Programación 1 - 2b </p>
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <p class="text-star text-secondary pt-2">Cabral Santiago - Esquenazi Karina - Mercado Ana Laura - Torrado Sofía
+              <br> Desarrollo 2 y Programación 1 - 2b
+            </p>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="row justify-content-end ">
+              <div class="col-2">
+                <a href="https://www.facebook.com" target="_blank"><img src="/img/redes/facebook.png"
+                    alt="Logo facebook" class="sizeredes"></a>
+              </div>
+              <div class="col-2">
+                <a href="https://www.instagram.com/" target="_blank"><img src="/img/redes/instagram.png"
+                    alt="Logo Instagram" class="sizeredes"></a>
+                </div>
+              <div class="col-2">
+                <a href="https://twitter.com/" target="_blank"><img src="/img/redes/twitter.png" alt="Logo Twitter" class="sizeredes"></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </footer>
 
       <!-- FIN DE FOOTER-->

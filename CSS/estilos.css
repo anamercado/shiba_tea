@@ -15,31 +15,9 @@
     font-family: 'poppins', sans-serif;
 }
 
-/* Por debajo de 700px */ 
-@media screen and (max-width: 700px){
-    .titulo-ppal{
-    font-size:  4em;
-    }
-    .slogan{
-    font-size:  2em;
-    }
-    .boton-prod {
-        font-size: 1em;
-    }
-    }
-/* Por debajo de 400px */
-@media screen and (max-width: 400px){
-    .titulo-ppal{
-        font-size:1.5em;
-    }
-    .slogan{
-        font-size:1em;
-    }
-    .boton-prod {
-        font-size: 1em;
-    }
-    }
-
+body {
+    background-color: #D9D9D9
+}
 
 .banner-text {
     top: 50%;
@@ -67,6 +45,10 @@
     rgba(75, 75, 73, 0.5),
     rgba(168, 173, 173, 0.5)),*/
 }
+.header{
+    width: 100%;
+    min-height: 100vh;
+}
 /*html {
     scroll-padding: 80px;
     scroll-behavior: smooth;
@@ -76,3 +58,89 @@
     align-items: center;
     justify-content: center;
 }
+
+
+.container-filosofia {
+background-color: #D9D9D9;
+
+}
+
+.container-experiencias {
+ background-color: #ACACAC;
+}
+
+.container-cards{
+background-color: white;
+}
+
+.container-galeria {
+background-color: #D9D9D9;
+}
+
+.container-testimonios {
+background-color: #D9D9D9;
+}
+
+.container-secciones {
+background-color:#D9D9D9 ;
+}
+
+.container-secciones0 {
+    background-color: #BDBCBC;
+ }
+
+
+.container-secciones1 {
+background-color: #D9D9D9;
+}
+
+.container-secciones2 {
+    background-color: #CECECE;
+}
+
+.container-secciones3 {
+    background-color: #ACACAC;
+}
+
+.sizeredes {
+    width: 50%;
+    height: 80%;
+    
+}
+
+/* Por debajo de 700px */ 
+@media screen and (max-width: 700px){
+    .titulo-ppal{
+    font-size:  4em;
+    }
+    .slogan{
+    font-size:  2em;
+    }
+    .boton-prod {
+        font-size: 1em;
+    }
+    
+    .sizeredes {
+    width: 40%;
+    height: 70%;
+    }
+    
+    }
+
+
+/* Por debajo de 400px */
+@media screen and (max-width: 400px){
+    .titulo-ppal{
+        font-size:1.5em;
+    }
+    .slogan{
+        font-size:1em;
+    }
+    .boton-prod {
+        font-size: 1em;
+    }
+    .sizeredes {
+        width: 30%;
+        height: 60%;
+        }
+    }
