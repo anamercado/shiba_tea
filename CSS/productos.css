@@ -64,7 +64,7 @@ article {
 
 .owl-prev {
     left: -20px;
-    
+
 }
 
 .owl-next {
@@ -82,10 +82,11 @@ article {
     article {
         width: 48%;
     }
+
     .owl-nav {
         font-size: 2.5em;
     }
-    
+
 }
 
 
@@ -97,46 +98,45 @@ article {
     .owl-nav {
         font-size: 4em;
     }
-    
+
 }
 
 .container-buscador {
     padding: 2em;
     margin: 0 auto;
-   
-  }
-  
-  form {
+
+}
+
+form {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     margin: 0 auto;
-  }
-  
-  input[type="search"] {
+}
+
+input[type="search"] {
     border: none;
     border-radius: 5px 5px 5px 5px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      padding: 0.35em 0.75em;
-      border: none;
-      font-size: 1.1em;
-      text-decoration: none;
-      line-height: normal;
-      max-height: 3em;
-    
-      flex: 2 0 250px;
-  }
-  
-  input[type="search"]:focus {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0.35em 0.75em;
+    border: none;
+    font-size: 1.1em;
+    text-decoration: none;
+    line-height: normal;
+    max-height: 3em;
+    flex: 2 0 250px;
+}
+
+input[type="search"]:focus {
     background: Thistle;
     color: black;
     letter-spacing: .1em;
     outline: none;
-  }
-  
-  button {
+}
+
+button {
     flex: 1 0 90px;
     max-height: 3em;
     font-size: 1.1em;
@@ -148,16 +148,16 @@ article {
     border: none;
     padding: 0.35em 0.75em;
     cursor: pointer;
-  
-  }
-  button:hover {
-    background: rgb(17, 17, 18);
-  }
-  
-  @media (max-width: 450px) {
-    body {
-      width: 100%;
-    }
-    
-  }
 
+}
+
+button:hover {
+    background: rgb(17, 17, 18);
+}
+
+@media (max-width: 450px) {
+    body {
+        width: 100%;
+    }
+
+}

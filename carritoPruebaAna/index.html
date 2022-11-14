@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiba Tea</title>
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+
+    <script defer src="stock.js"></script>
+    <script defer src="modal.js"></script>
+    <script defer src="app.js"></script>
+
+    <!--BOOTSTRAP ENLAZADO CON CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!--BOOTSTRAP DESDE UN CDN ( css) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--BOOTSTRAP ICONS ( cdn) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <!-- NAV BAR-->
+    <header>
+        <nav class="container-fluid navbar navbar-expand-md fixed-top py-0">
+            <div class="container-fluid bg-secondary">
+
+                <a class="navbar-brand text-white " href="index.html"> <strong> SHIBA TEA </strong>
+                    <img src="../img/logoblanco.png" alt="..." height="25"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="productos.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="filosofia.html">Filosofía</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="experiencias.html">Experiencias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="index.html">Testimonios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+   
+
+    <!--PORTADA-->
+    <div class="position-relative  px-0 mx-0" id="scrollspyHeading1">
+        <img src="../img/Galeria/galeria5.jpg" class="card-img">
+        <!--Necesitamos blurearla o cambiar de img siento que se pierde el titulo-->
+        <div class="text-center mb-4 position-absolute w-100 banner-text">
+            <h1 class="card-title text-center display-1 fw-bold mt-5 text-white">En este lugar encontrarás todos los
+                productos de nuestra casa</h1>
+            <h4 class="card-text w-semibold my-4 text-white text-center slogan">Experiencias y mimos para compartir</h4>
+        </div>
+    </div>
+    <!-- FIN DE PORTADA -->
+    
+    <!-- CARRITO Y BUSCADOR-->
+    <div class="container-buscador">
+        <form>
+            <input type="search" name="search" />
+            <button type="submit">Buscar</button>
+        </form>
+    </div>
+    <!--filtros-->
+    <select id="filtroIntensidad">
+    <option value="all">Todos</option>
+    <option value="Suave">Suave</option>
+    <option value="Moderado">Moderado</option>
+    <option value="Fuerte">Fuerte</option>
+</select>
+
+
+    <main id="contenedor-productos">
+
+    </main>
+
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+            <h3>Carrito</h3>
+            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+            <div id="carrito-contenedor">
+            </div>
+            <p class="precioProducto">Precio total: $ <span id="precioTotal">0</span></p>
+            <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+        </div>
+    </div>
+</body>
+
+</html>
