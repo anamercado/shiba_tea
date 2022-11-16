@@ -2,41 +2,33 @@
 <html lang="es">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shiba Tea</title>
-    
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
 
+    <script defer src="JS\stock.js"></script>
+    <script defer src="JS\modal.js"></script>
+    <script defer src="JS\app.js"></script>
+
+    <!--BOOTSTRAP ENLAZADO CON CSS -->
+    <link rel="stylesheet" href="CSS/estilos.css">
     <!--BOOTSTRAP DESDE UN CDN ( css) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-
-
     <!--BOOTSTRAP ICONS ( cdn) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-
-
-    <!--BOOTSTRAP ENLAZADO CON CSS -->
-    <link rel="stylesheet" href="CSS/productos.css">
-
-
-     <!--JQUERY -->
-     <link rel="stylesheet" href="vendors/owl.carousel.min.css">
-     <link rel="jquery" href="vendors/owl.carousel.min.js">
-
-    
 </head>
 
 <body>
-    <script src="./JS/productos.js"> </script>
 
-    <!--NAV BAR  -->
-
+    <!-- NAV BAR-->
     <nav class="container-fluid navbar navbar-expand-md fixed-top py-0">
         <div class="container-fluid bg-secondary">
 
             <a class="navbar-brand text-white " href="index.html"> <strong> SHIBA TEA </strong>
-                <img src="img/logoblanco.png" alt="..." height="25"></a>
+                <img class="img-logo" src="img/logoblanco.png" alt="..." height="15"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -44,7 +36,7 @@
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 
-                <ul class="navbar-nav">
+                <ul class="navbar-nav align-items-center">
                     <li class="nav-item">
                         <a class="nav-link text-white" href="index.html">Home</a>
                     </li>
@@ -63,283 +55,43 @@
                     <li class="nav-item">
                         <a class="nav-link text-white" href="contacto.html">Contacto</a>
                     </li>
-
+                    <li class="nav-item">
+                        <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+                    </li>
                 </ul>
             </div>
         </div>
 
     </nav>
 
-    <!--FIN DE NAV BAR -->
 
-    <!--PORTADA -->
-    
 
+    <!--PORTADA-->
     <div class="position-relative  px-0 mx-0" id="scrollspyHeading1">
-        <img src="img/Galeria/galeria5.jpg" class="card-img">
+        <img src="img\Galeria\galeria5.jpg" class="card-img">
         <!--Necesitamos blurearla o cambiar de img siento que se pierde el titulo-->
         <div class="text-center mb-4 position-absolute w-100 banner-text">
-            <h1 class="card-title text-center display-1 fw-bold mt-5 slogan">En este lugar encontrarás todos los
+            <h1 class="card-title text-center display-1 fw-bold mt-5 text-white">En este lugar encontrarás todos los
                 productos de nuestra casa</h1>
             <h4 class="card-text w-semibold my-4 text-white text-center slogan">Experiencias y mimos para compartir</h4>
         </div>
     </div>
     <!-- FIN DE PORTADA -->
 
-    <!-- CARRITO Y BUSCADOR-->
-    <div class="container-buscador">
-        <form>
-          <input type="search" name="search" />
-          <button type="submit">Buscar</button> 
-        </form>
-      </div>
+    <main id="contenedor-productos">
 
-    <!-- FIN DE CARRITO Y BUSCADOR-->
-
-    <!--PRODUCTOS -->
-    
-    <main class="container-productos">
-        
-        <h2>Blends Tea</h2>
-
-        <div class="owl-carousel owl-theme text-center pt-4 px-3">
-            <div> 
-                <figure class="item" style="width: 100%">
-                    <a href="img/blendtea1.jpg" target="_blank">
-                      <img class="pb-3" src="img/blendtea1.jpg" alt="Blend1">
-                    </a>
-                <h6><strong>Té Chai Orgánico</strong></h6>
-                <p>150 gr</p>
-                <p><strong>$680.-</strong></p>
-            </div>
-
-            <div> 
-                <figure class="item" style="width: 100%">
-                    <a href="img/blendtea2.jpg" target="_blank">
-                      <img class="pb-3" src="img/blendtea2.jpg" alt="Blend2">
-                    </a>
-                <h6><strong>Té Honey Orgánico</strong></h6>
-                <p>150 gr</p>
-                <p><strong>$680.-</strong></p>
-            </div>
-
-            <div> 
-                <figure class="item" style="width: 100%">
-                    <a href="img/blendtea3.jpg" target="_blank">
-                      <img class="pb-3" src="img/blendtea3.jpg" alt="Blend3">
-                    </a>
-                <h6><strong>Té Exótico Orgánico</strong></h6>
-                <p>150 gr</p>
-                <p><strong>$680.-</strong></p>
-            </div>
-
-            <div> 
-                <figure class="item" style="width: 100%">
-                    <a href="img/blendtea4.jpg" target="_blank">
-                      <img class="pb-3" src="img/blendtea4.jpg" alt="Blend4">
-                    </a>
-                <h6><strong>Té Floral Orgánico</strong></h6>
-                <p>150 gr</p>
-                <p><strong>$680.-</strong></p>
-            </div>
-
-            <div> Your Content </div>
-            <div> Your Content </div>
-            <div> Your Content </div>
-            <div> Your Content </div>
-
-            </div>
     </main>
 
-    <main class="container-productos">
-        
-        <h2>Box Tea</h2>
-
-        <div class="owl-carousel owl-theme text-center pt-4 px-3">
-            <div> 
-                <figure class="item" style="width: 100%">
-                    <a href="img/boxtea1.jpg" target="_blank">
-                      <img class="pb-3" src="img/boxtea1.jpg" alt="Box1">
-                    </a>
-                <h6><strong>Natural Box</strong></h6>
-                <p>4 Blends</p>
-                <p><strong>$1100.-</strong></p>
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+            <h3>Carrito</h3>
+            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+            <div id="carrito-contenedor">
             </div>
-
-            <div> 
-                <figure class="item" style="width: 100%">
-                    <a href="img/boxtea2.jpg" target="_blank">
-                      <img class="pb-3" src="img/boxtea2.jpg" alt="Box2">
-                    </a>
-                <h6><strong>Peace Box</strong></h6>
-                <p>4 Blends</p>
-                <p><strong>$1200.-</strong></p>
-            </div>
-
-            <div> 
-                <figure class="item" style="width: 100%">
-                    <a href="img/boxtea3.jpg" target="_blank">
-                      <img class="pb-3" src="img/boxtea3.jpg" alt="Box3">
-                    </a>
-                <h6><strong>Love Box</strong></h6>
-                <p>4 Blends</p>
-                <p><strong>$1500.-</strong></p>
-            </div>
-
-            <div> 
-                <figure class="item" style="width: 100%">
-                    <a href="img/boxtea4.jpg" target="_blank">
-                      <img class="pb-3" src="img/boxtea4.jpg" alt="Box4">
-                    </a>
-                <h6><strong>Sweet Box</strong></h6>
-                <p>4 Blends</p>
-                <p><strong>$1200.-</strong></p>
-            </div>
-
-            <div> Your Content </div>
-            <div> Your Content </div>
-            <div> Your Content </div>
-            <div> Your Content </div>
-
-            </div>
-    </main>
-
-    <main class="container-productos">
-        
-        <h2>Essentials Tea</h2>
-
-        <div class="owl-carousel owl-theme text-center pt-4 px-3">
-            <div> 
-                <figure class="item" style="width: 100%">
-                    <a href="img/caja1.jpg" target="_blank">
-                      <img class="pb-3" src="img/caja1.jpg" alt="Caja1">
-                    </a>
-                <h6><strong>Earth</strong></h6>
-                <p>Mezcla de Assam y Darjeeling</p>
-                <p><strong>$2100.-</strong></p>
-            </div>
-
-            <div> 
-                <figure class="item" style="width: 100%">
-                    <a href="img/caja2.jpg" target="_blank">
-                      <img class="pb-3" src="img/caja2.jpg" alt="Caja2">
-                    </a>
-                <h6><strong>Aqua</strong></h6>
-                <p>Té negro con mezcla de especias</p>
-                <p><strong>$2500.-</strong></p>
-            </div>
-
-            <div> 
-                <figure class="item" style="width: 100%">
-                    <a href="img/caja3.jpg" target="_blank">
-                      <img class="pb-3" src="img/caja3.jpg" alt="Caja3">
-                    </a>
-                <h6><strong>Fire</strong></h6>
-                <p>Té rojo con mezcla de frutas silvestres</p>
-                <p><strong>$2100.-</strong></p>
-            </div>
-
-            <div> 
-                <figure class="item" style="width: 100%">
-                    <a href="img/caja4.jpg" target="_blank">
-                      <img class="pb-3" src="img/caja4.jpg" alt="Caja4">
-                    </a>
-                <h6><strong>Forest</strong></h6>
-                <p>Té rojo con jengibre y jazmín.</p>
-                <p><strong>$2300.-</strong></p>
-            </div>
-
-            <div> Your Content </div>
-            <div> Your Content </div>
-            <div> Your Content </div>
-            <div> Your Content </div>
-
-            </div>
-    </main>
-
-    <!--FIN DE PRODUCTOS-->
-
-
-
-
-    <!-- FOOTER-->
-    <footer class="container-fluid bg-dark py-2">
-        <div class="row">
-          <div class="col-12 col-lg-6">
-            <p class="text-star text-secondary pt-2">Cabral Santiago - Esquenazi Karina - Mercado Ana Laura - Torrado Sofía
-              <br> Desarrollo 2 y Programación 1 - 2b
-            </p>
-          </div>
-          <div class="col-12 col-lg-6">
-            <div class="row justify-content-end pt-2">
-              <div class="col-2">
-                <a href="https://www.facebook.com" target="_blank"><img src="img/redes/facebook.png"
-                    alt="Logo facebook" class="sizeredes"></a>
-              </div>
-              <div class="col-2">
-                <a href="https://www.instagram.com/" target="_blank"><img src="img/redes/instagram.png"
-                    alt="Logo Instagram" class="sizeredes"></a>
-                </div>
-              <div class="col-2">
-                <a href="https://twitter.com/" target="_blank"><img src="img/redes/twitter.png" alt="Logo Twitter" class="sizeredes"></a>
-              </div>
-            </div>
-          </div>
+            <p class="precioProducto">Precio total: $ <span id="precioTotal">0</span></p>
+            <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
         </div>
-    </footer>
-
-    <!-- FIN DE FOOTER-->
-
-
-    <!--BOOTSTRAP DESDE UN CDN ( js) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
-
-    </script>
-    
-    <script
-    src="https://code.jquery.com/jquery-3.6.1.js"
-    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
-    crossorigin="anonymous"></script>
-  
-    <script src="vendors/owl.carousel.min.js"></script>
-
-    <script>
-        $('.owl-carousel').owlCarousel({
-            loop:true,
-            margin:10,
-            responsiveClass:true,
-            responsive:{
-                0:{
-                    items:1,
-                    nav:true
-                },
-                600:{
-                    items:3,
-                    nav:true
-                   
-                },
-                1000:{
-                    items:4,
-                    nav:true,
-                    loop:false
-                }
-            }
-        })
-/* 
-function centerCarouselControls() {
-  var carouselImage = $('.carousel-card > img');
-  var carouselControls = $('.owl-nav > div');
-  var carouselHeight = carouselImage.outerHeight();
-  var controlHeight = carouselControls.outerHeight();
-  var controlMargin = (carouselHeight - controlHeight) / 2;
-  carouselControls.css('margin-top', controlMargin + 'px');
-}
-
-$('.carousel-card > img').load(centerCarouselControls);
-$(window).on('resize', centerCarouselControls); */
-    </script>
-
+    </div>
 </body>
 
 </html>
