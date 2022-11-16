@@ -109,11 +109,11 @@ background-color: #D9D9D9;
 
 .sizeredes {
     width: 50%;
-    height: 80%;
+    height: 90%;
     
 }
 
-/* Por debajo de 700px */ 
+/* Por debajo de 700px 
 @media screen and (max-width: 700px){
     .titulo-ppal{
     font-size:  4em;
@@ -124,16 +124,16 @@ background-color: #D9D9D9;
     .boton-prod {
         font-size: 1em;
     }
-    
+
     .sizeredes {
     width: 40%;
-    height: 70%;
+    height: 80%;
     }
     
     }
 
 
-/* Por debajo de 400px */
+Por debajo de 400px
 @media screen and (max-width: 400px){
     .titulo-ppal{
         font-size:1.5em;
@@ -146,6 +146,7 @@ background-color: #D9D9D9;
     }
     .sizeredes {
         width: 30%;
-        height: 60%;
+        height: 70%;
         }
     }
+    */ 

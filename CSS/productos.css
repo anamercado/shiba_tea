@@ -48,6 +48,12 @@ article {
     padding: 0.5rem;
 }
 
+.sizeredes {
+    width: 50%;
+    height: 90%;
+    
+}
+
 .owl-nav {
     font-size: 2em;
 }
