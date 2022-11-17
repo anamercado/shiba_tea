@@ -20,7 +20,12 @@
     <!--BOOTSTRAP ENLAZADO CON CSS -->
     <link rel="stylesheet" href="CSS/estilos.css">
 
+    <!-- ANIMACIONES - PLUGIN 2-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!-- Style of the plugin -->
+    <link rel="stylesheet" href="plugin1/components/Font Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugin1/whatsapp-chat-support.css">
 </head>
 
 
@@ -123,17 +128,17 @@
 
             <ul class="row list-unstyled py-3 mt-4">
 
-                <li class="col-12 col-md-6 col-lg-3 mb-4 d-flex">
+                <li class="col-12 col-md-6 col-lg-3 mb-4 d-flex" data-aos="flip-right">
                     <div class="shadow w-100 p-3 rounded-3 ">
                         <i class=" h3 bi bi-envelope-fill"></i>
                         <h2 class="h3 fw-semibold">Email</h2>
                         <p> shibatea@gmail.com <br>
-                        shibatea@caminodelte.com.ar</p>
+                            shibatea@caminodelte.com.ar</p>
                     </div>
                 </li>
 
 
-                <li class="col-12 col-md-6 col-lg-3 mb-4 d-flex">
+                <li class="col-12 col-md-6 col-lg-3 mb-4 d-flex" data-aos="flip-right">
                     <div class="shadow w-100 p-3 rounded-3 ">
                         <i class=" h3 bi bi-chat-left-text-fill"></i>
                         <h2 class="h3 fw-semibold"> Live chat </h2>
@@ -142,7 +147,7 @@
                 </li>
 
 
-                <li class="col-12 col-md-6 col-lg-3 mb-4 d-flex">
+                <li class="col-12 col-md-6 col-lg-3 mb-4 d-flex" data-aos="flip-right">
                     <div class="shadow w-100 p-3 rounded-3 ">
                         <i class=" h3 bi bi-telephone-fill"></i>
                         <h2 class="h3 fw-semibold"> Teléfono </h2>
@@ -152,7 +157,7 @@
                 </li>
 
 
-                <li class="col-12 col-md-6 col-lg-3 mb-4 d-flex">
+                <li class="col-12 col-md-6 col-lg-3 mb-4 d-flex" data-aos="flip-right">
                     <div class="shadow w-100 p-3 rounded-3 ">
                         <i class=" h3 bi bi-geo-alt-fill"></i>
                         <h2 class="h3 fw-semibold">Nuestro local </h2>
@@ -167,44 +172,92 @@
         </div>
 
     </div>
-    
+
     <!--FIN DE BLOQUES DE INFORMACIÓN  -->
 
 
     <!-- FOOTER-->
     <footer class="container-fluid bg-dark py-2">
         <div class="row">
-          <div class="col-12 col-lg-6">
-            <p class="text-star text-secondary pt-2">Cabral Santiago - Esquenazi Karina - Mercado Ana Laura - Torrado Sofía
-              <br> Desarrollo 2 y Programación 1 - 2b
-            </p>
-          </div>
-          <div class="col-12 col-lg-6">
-            <div class="row justify-content-end pt-2">
-              <div class="col-2">
-                <a href="https://www.facebook.com" target="_blank"><img src="img/redes/facebook.png"
-                    alt="Logo facebook" class="sizeredes"></a>
-              </div>
-              <div class="col-2">
-                <a href="https://www.instagram.com/" target="_blank"><img src="img/redes/instagram.png"
-                    alt="Logo Instagram" class="sizeredes"></a>
-                </div>
-              <div class="col-2">
-                <a href="https://twitter.com/" target="_blank"><img src="img/redes/twitter.png" alt="Logo Twitter" class="sizeredes"></a>
-              </div>
+            <div class="col-12 col-lg-6">
+                <p class="text-star text-secondary pt-2">Cabral Santiago - Esquenazi Karina - Mercado Ana Laura -
+                    Torrado Sofía
+                    <br> Desarrollo 2 y Programación 1 - 2b
+                </p>
             </div>
-          </div>
+            <div class="col-12 col-lg-6">
+                <div class="row justify-content-end pt-2">
+                    <div class="col-2">
+                        <a href="https://www.facebook.com" target="_blank"><img src="img/redes/facebook.png"
+                                alt="Logo facebook" class="sizeredes"></a>
+                    </div>
+                    <div class="col-2">
+                        <a href="https://www.instagram.com/" target="_blank"><img src="img/redes/instagram.png"
+                                alt="Logo Instagram" class="sizeredes"></a>
+                    </div>
+                    <div class="col-2">
+                        <a href="https://twitter.com/" target="_blank"><img src="img/redes/twitter.png"
+                                alt="Logo Twitter" class="sizeredes"></a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </footer>
+    </footer>
 
     <!-- FIN DE FOOTER-->
 
+    <!-- Button Whatsapp Structure -->
+    <div class="whatsapp_chat_support wcs_fixed_right" id="button-w">
+        <div class="wcs_button_label">
+            Contáctanos
+        </div>
+        <div class="wcs_button wcs_button_circle">
+            <span class="fa fa-whatsapp"></span>
+        </div>
 
+        <div class="wcs_popup">
+            <div class="wcs_popup_close">
+                <span class="fa fa-close"></span>
+            </div>
+            <div class="wcs_popup_header">
+                <span class="fa fa-whatsapp"></span>
+                <strong>Servicio al cliente</strong>
+
+                <div class="wcs_popup_header_description">¿Necesidad de ayuda? Chatea con nosotros en Whatsapp</div>
+
+            </div>
+            <div class="wcs_popup_input" data-number="528123861273"
+                data-availability='{ "monday":"07:00-22:30", "tuesday":"07:00-22:30", "wednesday":"07:7030-22:30", "thursday":"07:00-22:30", "friday":"07:00-22:30", "saturday":"09:00-18:30", "sunday":"09:00-22:30" }'>
+                <input type="text" placeholder="Escribir pregunta!" />
+                <i class="fa fa-play"></i>
+            </div>
+            <div class="wcs_popup_avatar">
+                <img src="img/blendtea1.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery 1.8+ -->
+    <script src="plugin1/components/jQuery/jquery-1.11.3.min.js"></script>
+    <!-- Plugin JS file -->
+    <script src="plugin1/components/moment/moment.min.js"></script>
+    <script src="plugin1/components/moment/moment-timezone-with-data.min.js"></script> <!-- spanish language (es) -->
+    <script src="plugin1/whatsapp-chat-support.js"></script>
+    <script>
+        $('#button-w').whatsappChatSupport({
+            defaultMsg: '',
+        });
+    </script>
     <!--BOOTSTRAP DESDE UN CDN ( js) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
         </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

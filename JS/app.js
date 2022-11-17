@@ -29,19 +29,28 @@ botonVaciar.addEventListener('click', () => {
 })
 
 //PRIMER PRIMER PASO, INYECTAR EL HTML
+
 stockProductos.forEach((producto) => {
-    const div = document.createElement('div')
-    div.classList.add('producto')
-    div.innerHTML = `
-    <img src=${producto.img} alt= "">
+    //const div = document.createElement('div')
+    const div = document.getElementById('contenedor-productos')
+    const div3 = document.createElement('div')
+    const div2 = document.createElement('div')
+    
+    div3.classList.add ('cajaProducto')
+    div2.classList.add ('producto')
+    div2.classList.add('col-12')
+    div2.classList.add('col-md-6')
+    div2.classList.add('col-lg-3')
+    
+    div2.innerHTML = `
+    <img class="img-fluid" src=${producto.img} alt= "">
     <h3>${producto.nombre}</h3>
     <p>${producto.desc}</p>
     <p>Intensidad: ${producto.intensidad}</p>
     <p class="precioProducto">Precio: $ ${producto.precio}</p>
     <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="bi bi-cart2"></i></button>
-
     `
-    contenedorProductos.appendChild(div)
+    contenedorProductos.appendChild(div2)
 
     //2 - SEGUNDO PASO, LUEGO DE QUE INSERTAMOS EL HTML EN EL DOM:
     const boton = document.getElementById(`agregar${producto.id}`)
@@ -129,4 +138,34 @@ const actualizarCarrito = () => {
     //Por cada producto q recorro en mi carrito, al acumulador le suma la propiedad precio, con el acumulador
     //empezando en 0.
 
+}
+
+//ubicar elemento/s dentro del DOM
+const blendtea = document.querySelector('#blendtea');
+const boxtea = document.querySelector('#2');
+const essential = document.querySelector('#3');
+
+//estado inicial
+blendtea.style.display = 'none';
+boxtea.style.display = 'none';
+essential.style.display = 'none';
+
+//declaramos función de control
+function mostrarOcultar( tipoProducto )
+{
+    if( tipoProducto == 'blendtea' ){
+        blendtea.style.display = 'flex';
+        boxtea.style.display = 'none';
+        essential.style.display = 'none';
+    }
+    else if( tipoProducto == 'boxtea' ){
+        blendtea.style.display = 'none';
+        boxtea.style.display = 'flex';
+        essential.style.display = 'none';
+    }
+    else if( tipoProducto == 'essential' ){
+        blendtea.style.display = 'none';
+        boxtea.style.display = 'none';
+        essential.style.display = 'flex';
+    }
 }

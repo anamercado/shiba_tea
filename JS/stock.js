@@ -2,7 +2,7 @@ let stockProductos = [
     {
         id: 1,
         nombre: "Te chai orgánico",
-        tipo: "blend",
+        tipo: "blendtea",
         cantidad: 1,
         desc: "Ingredientes: Trozos de canela, pedacitos de jengibre, pimienta negra entera, clavo entero,cúrcuma y cardamomo.",
         precio: 1200,
@@ -11,18 +11,18 @@ let stockProductos = [
     },
 
     {
-        id: 2, nombre: "Té Honey Orgánico",
-        tipo: "blend",
+        id: 2, nombre: "Té honey orgánico",
+        tipo: "blendtea",
         cantidad: 1,
-        desc: "Hecho con el arbursto 'Honeybus' de Sudáfrica, la infusión tiene un sabor agradablemente dulce y aromático.",
+        desc: "Hecho con el arbursto 'Honeybus' de Sudáfrica, la infusión tiene un sabor agradablemente dulce.",
         precio: 1100,
         intensidad: "Moderado",
         img: 'img/blendtea2.jpg'
     },
 
     {
-        id: 3, nombre: " Té Exótico Orgánico",
-        tipo: "blend",
+        id: 3, nombre: " Té exótico orgánico",
+        tipo: "blendtea",
         cantidad: 1,
         desc: "Ingredientes: Astillas de canela, jengibre, pimienta negra, clavo, pimienta rosa y cardamomo.",
         precio: 990,
@@ -31,8 +31,8 @@ let stockProductos = [
     },
 
     {
-        id: 4, nombre: "Té Floral Orgánico",
-        tipo: "blend",
+        id: 4, nombre: "Té floral orgánico",
+        tipo: "blendtea",
         cantidad: 1,
         desc: "Ingredientes: Té verde, manzana, pimpollos de jazmín, pétalos de rosa, caléndula y esencia de jazmín.",
         precio: 680,
@@ -40,52 +40,13 @@ let stockProductos = [
         img: 'img/blendtea4.jpg'
     },
 
-    {
-        id: 5, nombre: "Té Floral Orgánico",
-        tipo: "blend",
-        cantidad: 1,
-        desc: "Ingredientes: Té verde, manzana, pimpollos de jazmín, pétalos de rosa, caléndula y esencia de jazmín.",
-        precio: 680,
-        intensidad: "Moderado",
-        img: 'img/blendtea5.jpg'
-    },
-
-    {
-        id: 6, nombre: "Té Floral Orgánico",
-        tipo: "blend",
-        cantidad: 1,
-        desc: "Ingredientes: Té verde, manzana, pimpollos de jazmín, pétalos de rosa, caléndula y esencia de jazmín.",
-        precio: 680,
-        intensidad: "Moderado",
-        img: 'img/blendtea6.jpg'
-    },
-
-    {
-        id: 7, nombre: "Té Floral Orgánico",
-        tipo: "blend",
-        cantidad: 1,
-        desc: "Ingredientes: Té verde, manzana, pimpollos de jazmín, pétalos de rosa, caléndula y esencia de jazmín.",
-        precio: 680,
-        intensidad: "Moderado",
-        img: 'img/blendtea7.jpg'
-    },
-
-    {
-        id: 8, nombre: "Té Floral Orgánico",
-        tipo: "blend",
-        cantidad: 1,
-        desc: "Ingredientes: Té verde, manzana, pimpollos de jazmín, pétalos de rosa, caléndula y esencia de jazmín.",
-        precio: 680,
-        intensidad: "Moderado",
-        img: 'img/blendtea8.jpg'
-    },
-
-
+    
 
     /*BOX */
     {
-        id: 9, nombre: "Natural Box",
-        tipo: "box",
+        id: 5, 
+        nombre: "Natural Box",
+        tipo: "boxtea",
         cantidad: 1,
         desc: "Incluye 4 blends con base de té verde, lavanda, manzanilla, melisa, cedrón, tilo, menta, caléndula y pétalos de rosas.",
         precio: 1100,
@@ -94,79 +55,44 @@ let stockProductos = [
     },
 
     {
-        id: 10, nombre: "Peace Box",
-        tipo: "box",
+        id: 6,
+        nombre: "Peace Box",
+        tipo: "boxtea",
         cantidad: 1,
-        desc: "Incluye 4 blends con base de té verde, hierbas, flores y frutas que invitan al relax.",
+        desc: "Incluye 4 blends con base de té verde, lavanda, manzanilla, melisa, cedrón, tilo, menta, caléndula y pétalos de rosas.",
         precio: 1150,
         intensidad: "Fuerte",
         img: 'img/boxtea2.jpg'
     },
 
     {
-        id: 11, nombre: "Love Box",
-        tipo: "box",
+        id: 7, 
+        nombre: "Love Box",
+        tipo: "boxtea",
         cantidad: 1,
-        desc: "Incluye 4 blends con base de frutas, perfumada y rica en antioxidantes. Contiene lavanda, hibiscus, cedrón y menta.",
+        desc: "Incluye 4 blends con base de té verde, lavanda, manzanilla, melisa, cedrón, tilo, menta, caléndula y pétalos de rosas.",
         precio: 1150,
         intensidad: "Suave",
         img: 'img/boxtea3.jpg'
     },
 
     {
-        id: 12, nombre: "Sweet Box",
-        tipo: "box",
+        id: 8, 
+        nombre: "Sweet Box",
+        tipo: "boxtea",
         cantidad: 1,
-        desc: "Incluye 4 blends con base de  té verde molido. Energizante y rico en antioxidantes.",
+        desc: "Incluye 4 blends con base de té verde, lavanda, manzanilla, melisa, cedrón, tilo, menta, caléndula y pétalos de rosas.",
         precio: 1150,
         intensidad: "Moderado",
         img: 'img/boxtea4.jpg'
     },
 
-    {
-        id: 13, nombre: "Natural Box",
-        tipo: "box",
-        cantidad: 1,
-        desc: "Incluye 4 blends con base de té verde, lavanda, manzanilla, melisa, cedrón, tilo, menta, caléndula y pétalos de rosas.",
-        precio: 1100,
-        intensidad: "Fuerte",
-        img: 'img/boxtea5.jpg'
-    },
-
-    {
-        id: 14, nombre: "Peace Box",
-        tipo: "box",
-        cantidad: 1,
-        desc: "Incluye 4 blends con base de té verde, hierbas, flores y frutas que invitan al relax.",
-        precio: 1150,
-        intensidad: "Fuerte",
-        img: 'img/boxtea6.jpg'
-    },
-
-    {
-        id: 15, nombre: "Love Box",
-        tipo: "box",
-        cantidad: 1,
-        desc: "Incluye 4 blends con base de frutas, perfumada y rica en antioxidantes. Contiene lavanda, hibiscus, cedrón y menta.",
-        precio: 1150,
-        intensidad: "Suave",
-        img: 'img/boxtea7.jpg'
-    },
-
-    {
-        id: 16, nombre: "Sweet Box",
-        tipo: "box",
-        cantidad: 1,
-        desc: "Incluye 4 blends con base de  té verde  molido. Energizante y rico en antioxidantes.",
-        precio: 1150,
-        intensidad: "Moderado",
-        img: 'img/boxtea8.jpg'
-    },
+   
 
     /*Essentials */
 
     {
-        id: 17,
+        id: 9,
         nombre: "Earth",
         tipo: "essential",
         cantidad: 1,
@@ -177,18 +103,18 @@ let stockProductos = [
     },
 
     {
-        id: 18,
+        id: 10,
         nombre: "Aqua",
         tipo: "essential",
         cantidad: 1,
-        desc: "Té negro con cardamomo, coriandro, enebro, canela en rama, jengibre, clavo de olor y anís verde.",
+        desc: "Té negro con cardamomo, coriandro, enebro, canela en rama, jengibre, clavo de olor, cedrón, tilo, anís verde, y cereza.",
         precio: 1500,
         intensidad: "Moderado",
         img: 'img/caja2.jpg'
     },
 
     {
-        id: 19,
+        id: 11,
         nombre: "Fire",
         tipo: "essential",
         cantidad: 1,
@@ -199,58 +125,17 @@ let stockProductos = [
     },
 
     {
-        id: 20,
+        id: 12,
         nombre: "Forest",
         tipo: "essential",
         cantidad: 1,
-        desc: "Té rojo, jengibre, naranja deshidratada, pétalos de rosa, enebro y pimpollos de jazmín.",
+        desc: "Té rojo combinado con una caprichosa mezcla de frutas silvestres. Contiene té rojo, frutilla, frambuesa, grosella y cereza.",
         precio: 1500,
         intensidad: "Moderado",
         img: 'img/caja4.jpg'
     },
 
-    {
-        id: 21,
-        nombre: "Earth",
-        tipo: "essential",
-        cantidad: 1,
-        desc: "Té rojo, jengibre, naranja deshidratada, pétalos de rosa, enebro y pimpollos de jazmín.",
-        precio: 1500,
-        intensidad: "Moderado",
-        img: 'img/caja5.jpg'
-    },
-
-    {
-        id: 22,
-        nombre: "Aqua",
-        tipo: "essential",
-        cantidad: 1,
-        desc: "Té rojo, jengibre, naranja deshidratada, pétalos de rosa, enebro y pimpollos de jazmín.",
-        precio: 1500,
-        intensidad: "Moderado",
-        img: 'img/caja6.jpg'
-    },
-    {
-        id: 23,
-        nombre: "Fire",
-        tipo: "essential",
-        cantidad: 1,
-        desc: "Té rojo, jengibre, naranja deshidratada, pétalos de rosa, enebro y pimpollos de jazmín.",
-        precio: 1500,
-        intensidad: "Moderado",
-        img: 'img/caja7.jpg'
-    },
-
-    {
-        id: 24,
-        nombre: "Forest",
-        tipo: "essential",
-        cantidad: 1,
-        desc: "Té rojo, jengibre, naranja deshidratada, pétalos de rosa, enebro y pimpollos de jazmín.",
-        precio: 1500,
-        intensidad: "Moderado",
-        img: 'img/caja8.jpg'
-    },
+   
 ]
 
 
